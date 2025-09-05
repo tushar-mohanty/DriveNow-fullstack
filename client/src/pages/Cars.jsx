@@ -53,7 +53,7 @@ const Cars = () => {
   },[])
 
   useEffect(()=>{
-    cars.length > 0 && !isSearcgData && applyFilter()
+    cars.length > 0 && !isSearchData && applyFilter()
   },[input, cars])
   return (
     <div>
