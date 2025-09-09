@@ -30,7 +30,7 @@ const AddCar = () => {
     setIsLoading(true)
     try {
       const formData = new FormData()
-      formData.aooend('image', image)
+      formData.append('image', image)
       formData.append('carData', JSON.stringify(car))
 
       const {data} = await axios.post('/api/owner/add-car', formData)
