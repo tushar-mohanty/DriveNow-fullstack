@@ -104,7 +104,7 @@ export const deleteCar = async (req, res) =>{
             return res.json({ success: false, message: "Unauthorized" });
         }
 
-        car.owner == null;
+        car.owner = null;
         car.isAvailable = false;
 
         await car.save()
